@@ -34,3 +34,23 @@ model Pictures {
   id      Int      @id @default(autoincrement())
   link   String   @unique
 }
+
+model Wines {
+    id      Int      @id @default(autoincrement())
+    title 	String 	 @unique
+	price 	String
+	tags 	String
+}
+
+model Cocktails {
+    id      Int      @id @default(autoincrement())
+    title 	String 	 @unique
+	price 	String
+	tags 	String
+}
+
+model Awards {
+	id      	Int      @id @default(autoincrement())
+	imgUrl		String
+	subtitle 	String
+}
